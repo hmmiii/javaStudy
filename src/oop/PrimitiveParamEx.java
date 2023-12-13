@@ -1,6 +1,5 @@
 package oop;
 
-class Data{ int x; }
 public class PrimitiveParamEx {
     public static void main(String[] args) {
         Data d = new Data();
