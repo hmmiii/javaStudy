@@ -1,5 +1,3 @@
 package oop;
 
-class Data {
-    int x;
-}
+class Data { int x; }
