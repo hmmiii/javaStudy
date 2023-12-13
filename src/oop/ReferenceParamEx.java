@@ -1,6 +1,5 @@
 package oop;
 
-class Data{ int x; }
 public class ReferenceParamEx {
     public static void main(String[] args) {
         Data d = new Data();
