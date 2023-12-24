@@ -6,6 +6,6 @@ public class InitVar {
 
     void method1(){
         int i;
-        int j = i; // 에러
+//        int j = i; // 에러
     }
 }
