@@ -55,12 +55,22 @@ class Audio extends Product{
 class Buyer{
     int money = 1000;
     int bonusPoint = 0;
+    Product[] item = new Product[10]; // 구입한 제품을 저장하기 위한 배열
+    int i = 0;
+
 
     void buy(Product p){
+        if (money < p.price){
+            System.out.println("잔액이 부족하여 구매 불가합니다.");
+            return;
+        }
+
         // Buyer가 가진 돈에서 제품의 가격만큼 뺀다.
         money -= p.price;
 
         // Buyer의 보너스점수에 제품의 보너스점수를 더한다.
         bonusPoint += p.bonusPoint;
+        item[i++] = p; // 제품을 Product[] item에 저장
+        System.out.println(p + " 을 구매하셨습니다.");
     }
 }
